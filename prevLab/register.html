@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Register</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <form class='form' action="javascript:register()">
+            <div class="header">
+                <h1>REGISTER</h1>
+                <p>Please fill in this form to create an account.</p>
+                
+            </div>
+                <input type="name" id="uname" placeholder="Username">
+                <input type="email" id="email" placeholder="Email">
+                <input type="password" id="password" placeholder="New Password">
+
+                <div class="button_container" id="button_container">
+                    <button class="container_signin" onclick="register()">Register</button>
+                
+            
+                    <div >
+                        <p>Login? <a href="/login.html">SignIn</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <!-- Our script must be loaded after firebase references -->
+    <script src="index.js"></script>
+
+</html>
+
